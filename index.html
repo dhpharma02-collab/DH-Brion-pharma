@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>DH Brion Pharma | Finland</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #071d49;
+      background: white;
+    }
+
+    /* NAVIGATION */
+    header {
+      height: 95px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 7%;
+      background: white;
+      position: relative;
+      z-index: 10;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+    }
+
+    .brand {
+      font-size: 25px;
+      font-weight: 800;
+      color: #062b72;
+      letter-spacing: 1px;
+    }
+
+    .brand span {
+      display: block;
+      color: #00a9b7;
+      font-size: 13px;
+      letter-spacing: 5px;
+      margin-top: 3px;
+    }
+
+    nav {
+      display: flex;
+      gap: 35px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #071d49;
+      font-size: 13px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    nav a:hover {
+      color: #00a9b7;
+    }
+
+    /* HERO */
+    .hero {
+      min-height: 650px;
+      display: flex;
+      align-items: center;
+      padding: 80px 8%;
+      position: relative;
+      overflow: hidden;
+
+      background:
+        linear-gradient(
+          90deg,
+          rgba(2, 22, 65, 0.96) 0%,
+          rgba(3, 47, 110, 0.90) 52%,
+          rgba(0, 164, 184, 0.65) 100%
+        );
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      width: 550px;
+      height: 550px;
+      border: 2px solid rgba(255,255,255,0.15);
+      border-radius: 50%;
+      right: -120px;
+      top: 40px;
+    }
+
+    .hero-content {
+      max-width: 720px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-small {
+      color: #4de1e8;
+      font-size: 13px;
+      font-weight: bold;
+      letter-spacing: 4px;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      color: white;
+      font-size: 64px;
+      line-height: 1.05;
+      margin-bottom: 25px;
+    }
+
+    .hero-text {
+      color: #e4eefb;
+      font-size: 18px;
+      line-height: 1.7;
+      max-width: 600px;
+      margin-bottom: 35px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 16px 28px;
+      background: #00a9b7;
+      color: white;
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    /* ABOUT */
+    .about {
+      padding: 100px 8%;
+      text-align: center;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .section-small {
+      color: #00a9b7;
+      font-weight: bold;
+      letter-spacing: 4px;
+      font-size: 12px;
+      margin-bottom: 15px;
+    }
+
+    .about h2,
+    .products h2,
+    .contact h2 {
+      font-size: 42px;
+      margin-bottom: 25px;
+    }
+
+    .about p {
+      color: #5d687a;
+      font-size: 17px;
+      line-height: 1.8;
+    }
+
+    /* SERVICES */
+    .services {
+      padding: 20px 8% 100px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .service-card {
+      padding: 45px 35px;
+      background: #f4f8fc;
+      border-bottom: 4px solid #00a9b7;
+      transition: 0.3s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+    }
+
+    .number {
+      color: #00a9b7;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .service-card h3 {
+      font-size: 23px;
+      margin: 20px 0 15px;
+    }
+
+    .service-card p {
+      color: #687386;
+      line-height: 1.7;
+    }
+
+    /* PRODUCTS */
+    .products {
+      background: #061b46;
+      color: white;
+      padding: 100px 8%;
+      text-align: center;
+    }
+
+    .products p {
+      max-width: 750px;
+      margin: auto;
+      color: #cbd7e9;
+      line-height: 1.8;
+      font-size: 17px;
+    }
+
+    /* CONTACT */
+    .contact {
+      padding: 100px 8%;
+      text-align: center;
+    }
+
+    .contact p {
+      color: #687386;
+      margin: 10px 0;
+    }
+
+    footer {
+      background: #03102d;
+      color: #9daac1;
+      padding: 30px;
+      text-align: center;
+      font-size: 13px;
+    }
+
+    /* MOBILE */
+    @media(max-width: 800px) {
+      header {
+        padding: 0 5%;
+      }
+
+      nav {
+        display: none;
+      }
+
+      .hero {
+        min-height: 560px;
+      }
+
+      .hero h1 {
+        font-size: 42px;
+      }
+
+      .services {
+        grid-template-columns: 1fr;
+      }
+
+      .about h2,
+      .products h2,
+      .contact h2 {
+        font-size: 34px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="brand">
+    DH BRION
+    <span>PHARMA</span>
+  </div>
+
+  <nav>
+    <a href="#home">HOME</a>
+    <a href="#about">ABOUT US</a>
+    <a href="#services">SERVICES</a>
+    <a href="#products">PRODUCTS</a>
+    <a href="#contact">CONTACT</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+
+  <div class="hero-content">
+
+    <div class="hero-small">
+      DH BRION PHARMA • FINLAND
+    </div>
+
+    <h1>
+      Advancing Health.<br>
+      Building Trust.
+    </h1>
+
+    <p class="hero-text">
+      Connecting European healthcare manufacturers with
+      international markets through trusted partnerships,
+      regulatory support and distribution.
+    </p>
+
+    <a class="button" href="#about">
+      DISCOVER DH BRION
+    </a>
+
+  </div>
+
+</section>
+
+<section class="about" id="about">
+
+  <div class="section-small">
+    WHO WE ARE
+  </div>
+
+  <h2>
+    Your Partner in Global Healthcare
+  </h2>
+
+  <p>
+    DH Brion Pharma is a Finland-based healthcare company
+    focused on international business development,
+    market access and long-term distribution partnerships.
+    We connect high-quality manufacturers with growing
+    healthcare markets.
+  </p>
+
+</section>
+
+<section class="services" id="services">
+
+  <div class="service-card">
+    <span class="number">01</span>
+
+    <h3>Market Access</h3>
+
+    <p>
+      Connecting manufacturers with international
+      markets and trusted local partners.
+    </p>
+  </div>
+
+  <div class="service-card">
+    <span class="number">02</span>
+
+    <h3>Regulatory Support</h3>
+
+    <p>
+      Supporting manufacturers throughout registration
+      and market-entry processes.
+    </p>
+  </div>
+
+  <div class="service-card">
+    <span class="number">03</span>
+
+    <h3>Distribution</h3>
+
+    <p>
+      Developing reliable and sustainable distribution
+      networks for healthcare products.
+    </p>
+  </div>
+
+</section>
+
+<section class="products" id="products">
+
+  <div class="section-small">
+    OUR PORTFOLIO
+  </div>
+
+  <h2>
+    Healthcare Products
+  </h2>
+
+  <p>
+    Our business covers pharmaceuticals, food supplements,
+    medical devices and private-label healthcare products
+    from selected manufacturing partners.
+  </p>
+
+</section>
+
+<section class="contact" id="contact">
+
+  <div class="section-small">
+    CONTACT US
+  </div>
+
+  <h2>
+    Let's Build a Partnership
+  </h2>
+
+  <p>DH Brion Pharma</p>
+  <p>Finland</p>
+
+</section>
+
+<footer>
+  © 2026 DH Brion Pharma. All rights reserved.
+</footer>
+
+</body>
+</html>
