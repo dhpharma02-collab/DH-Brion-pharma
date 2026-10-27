@@ -91,11 +91,15 @@ background-repeat: no-repeat;
       top: 40px;
     }
 
-    .hero-content {
-      max-width: 720px;
-      position: relative;
-      z-index: 2;
-    }
+  .hero-content {
+  max-width: 560px;
+  position: relative;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.88);
+  padding: 38px 42px;
+  border-radius: 24px;
+  box-shadow: 0 15px 45px rgba(11, 47, 107, 0.15);
+}
 
     .hero-small {
       color: #16a6b6;
@@ -103,7 +107,7 @@ background-repeat: no-repeat;
       font-weight: bold;
       letter-spacing: 4px;
       margin-bottom: 20px;
-    }
+   font-size: 50px;
 
     .hero h1 {
      color: #0b2f6b;
@@ -310,6 +314,27 @@ background-repeat: no-repeat;
   color: #526174;
   line-height: 1.7;
   font-size: 15px;
+}.header-company {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  white-space: nowrap;
+}
+
+.header-company strong {
+  color: #0b2f6b;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.header-company span {
+  color: #526174;
+  font-size: 11px;
 }
   </style>
 </head>
@@ -318,12 +343,17 @@ background-repeat: no-repeat;
 
 <header>
   <img src="ChatGPT Image Aug 11, 2026, 09_21_39 AM.png" alt="DH Brion Pharma" style="height:75px; width:auto;">
-
+<div class="header-company">
+  <strong>DH BRION PHARMA</strong>
+  <span>Business ID: 3646094-9</span>
+  <span>Helsinki, Finland</span>
+</div>
   <nav>
     <a href="#home">HOME</a>
     <a href="#about">ABOUT US</a>
-    <a href="#services">SERVICES</a>
-    <a href="#products">PRODUCTS</a>
+    <a href="#services">OUR SERVICES</a>
+    <a href="#distributors">FOR DISTRIBUTORS</a>
+    <a href="#manufacturers">FOR MANUFACTURERS</a>
     <a href="#contact">CONTACT</a>
   </nav>
 </header>
