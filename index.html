@@ -284,6 +284,32 @@ background-repeat: no-repeat;
   color: #526174;
   line-height: 1.7;
   font-size: 15px;
+}.manufacturer-services {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-top: 45px;
+}
+
+.manufacturer-service {
+  background: white;
+  padding: 30px;
+  border-radius: 18px;
+  border-top: 4px solid #16a6b6;
+  box-shadow: 0 10px 30px rgba(11, 47, 107, 0.10);
+  text-align: left;
+}
+
+.manufacturer-service h3 {
+  color: #0b2f6b;
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.manufacturer-service p {
+  color: #526174;
+  line-height: 1.7;
+  font-size: 15px;
 }
   </style>
 </head>
@@ -302,11 +328,11 @@ background-repeat: no-repeat;
   </nav>
 </header>
 
-<section class="hero" id="home">
+<section classs="hero" id="home">
 
-  <div class="hero-content">
+  <div classs="hero-content">
 
-    <div class="hero-small">
+    <div classs="hero-small">
       DH BRION PHARMA • FINLAND
     </div>
 
@@ -333,9 +359,9 @@ background-repeat: no-repeat;
 
 </section>
 
-<section class="about" id="about">
+<section classs="about" id="about">
 
-  <div class="section-small">
+  <div classs="section-small">
     WHO WE ARE
   </div>
 
@@ -346,21 +372,43 @@ background-repeat: no-repeat;
 <p>
   DH Brion Pharma is a Finland-based healthcare company connecting trusted European manufacturers with healthcare markets across Iraq, the Kurdistan Region and the wider Middle East. We support our partners with product sourcing, market access, regulatory processes, private-label development and long-term distribution partnerships.
 </p>
-<div class="about-cards">
+<div classs="about-cards">
 
-  <div class="about-card">
+  <div classs="about-card">
     <h3>European Sourcing</h3>
     <p>Connecting trusted European manufacturers with growing healthcare markets.</p>
   </div>
 
-  <div class="about-card">
+  <div classs="about-card">
     <h3>Regulatory Support</h3>
     <p>Supporting product registration, compliance and market-entry processes.</p>
   </div>
 
-  <div class="about-card">
+  <div classs="about-card">
     <h3>Market & Distribution</h3>
     <p>Building long-term partnerships across Iraq, the Kurdistan Region and the Middle East.</p>
+  </div>
+
+</div><div class="manufacturer-services">
+
+  <div class="manufacturer-service">
+    <h3>Market Entry & Business Development</h3>
+    <p>Helping European healthcare manufacturers enter Iraq, the Kurdistan Region and Middle Eastern markets.</p>
+  </div>
+
+  <div class="manufacturer-service">
+    <h3>Regulatory & Product Registration</h3>
+    <p>Supporting registration, documentation and market-entry procedures with trusted local partners.</p>
+  </div>
+
+  <div class="manufacturer-service">
+    <h3>Distribution & Local Partnerships</h3>
+    <p>Connecting manufacturers with reliable distributors, importers and healthcare partners.</p>
+  </div>
+
+  <div class="manufacturer-service">
+    <h3>Private Label Development</h3>
+    <p>Supporting private-label projects from product sourcing and development to market launch.</p>
   </div>
 
 </div>
@@ -368,27 +416,11 @@ background-repeat: no-repeat;
 
 
 
-<section class="products" id="products">
 
-  <div class="section-small">
-    OUR PORTFOLIO
-  </div>
-
-  <h2>
-    Healthcare Products
-  </h2>
-
-  <p>
-    Our business covers pharmaceuticals, food supplements,
-    medical devices and private-label healthcare products
-    from selected manufacturing partners.
-  </p>
-
-</section>
 
 <section class="contact" id="contact">
 
-  <div class="section-small">
+<div class="section-small">
     CONTACT US
   </div>
 
