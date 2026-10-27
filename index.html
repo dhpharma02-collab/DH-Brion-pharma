@@ -258,7 +258,32 @@ background-repeat: no-repeat;
       .contact h2 {
         font-size: 34px;
       }
-    }
+    }.about-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 45px;
+}
+
+.about-card {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 18px;
+  border: 1px solid #e6eef5;
+  box-shadow: 0 10px 30px rgba(11, 47, 107, 0.08);
+}
+
+.about-card h3 {
+  color: #0b2f6b;
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.about-card p {
+  color: #526174;
+  line-height: 1.7;
+  font-size: 15px;
+}
   </style>
 </head>
 
@@ -289,16 +314,17 @@ background-repeat: no-repeat;
   Healthcare Solutions for Iraq & the Middle East
 </h1>
 
-<h2>Connecting Europe with Healthcare Partners Across the Region</h2>
+<h2>Co
+  nnecting Europe with Healthcare Partners Across the Region</h2>
       
    
     
 
-<p class="hero-text">
+<p about us="hero-text">
   Pharmaceuticals • Food Supplements • Medical Devices • Private Label
 </p>
 
-    <a class="button" href="#about">
+    <a about us="button" href="#about">
       FIND YOUR SOLUTION
     </a>
 
@@ -313,17 +339,30 @@ background-repeat: no-repeat;
   </div>
 
   <h2>
-    Your Partner in Global Healthcare
-  </h2>
+  Building Trusted Healthcare Partnerships Across Borders
+</h2>
 
-  <p>
-    DH Brion Pharma is a Finland-based healthcare company
-    focused on international business development,
-    market access and long-term distribution partnerships.
-    We connect high-quality manufacturers with growing
-    healthcare markets.
-  </p>
+<p>
+  DH Brion Pharma is a Finland-based healthcare company connecting trusted European manufacturers with healthcare markets across Iraq, the Kurdistan Region and the wider Middle East. We support our partners with product sourcing, market access, regulatory processes, private-label development and long-term distribution partnerships.
+</p>
+<div class="about-cards">
 
+  <div class="about-card">
+    <h3>European Sourcing</h3>
+    <p>Connecting trusted European manufacturers with growing healthcare markets.</p>
+  </div>
+
+  <div class="about-card">
+    <h3>Regulatory Support</h3>
+    <p>Supporting product registration, compliance and market-entry processes.</p>
+  </div>
+
+  <div class="about-card">
+    <h3>Market & Distribution</h3>
+    <p>Building long-term partnerships across Iraq, the Kurdistan Region and the Middle East.</p>
+  </div>
+
+</div>
 </section>
 
 <section class="services" id="services">
